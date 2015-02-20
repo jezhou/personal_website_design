@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div id="wrapper">
+      {% include sidebar.html %}
+
+      <div id="page-content-wrapper">
+
+        <a href="#menu-toggle" class="btn btn-danger btn-small" id="menu-toggle">
+          <span class="glyphicon glyphicon-align-justify"></span>
+        </a>
+
+        <div class="container content">
+          {{ content }}
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+  {% include footer.html %}
+
+</html>

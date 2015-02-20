@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="col-sm-offset-2 col-sm-8 col-xs-12">
+
+  <img class="img-responsve" src="{{"/images/cover_pano.JPG" | prepend:site.baseurl}}">
+
+  <hr>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+          <div class="col-xs-6">
+            <code>{{ post.date | date: "%b %-d, %Y" }}</code>
+          </div>
+          <div class="post-link col-xs-6">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
